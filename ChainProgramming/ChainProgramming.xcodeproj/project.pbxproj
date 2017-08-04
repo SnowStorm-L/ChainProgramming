@@ -13,6 +13,7 @@
 		0F712F421F30AA2400DF8F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F712F411F30AA2400DF8F30 /* Assets.xcassets */; };
 		0F712F451F30AA2400DF8F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F712F431F30AA2400DF8F30 /* LaunchScreen.storyboard */; };
 		0F712F4D1F30AA5C00DF8F30 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F712F4C1F30AA5C00DF8F30 /* UIView+Extension.swift */; };
+		0F901FE61F3163D900853210 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F901FE51F3163D900853210 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0F712F441F30AA2400DF8F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F712F461F30AA2400DF8F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F712F4C1F30AA5C00DF8F30 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0F901FE51F3163D900853210 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0F712F3A1F30AA2400DF8F30 /* AppDelegate.swift */,
 				0F712F3C1F30AA2400DF8F30 /* ViewController.swift */,
 				0F712F4C1F30AA5C00DF8F30 /* UIView+Extension.swift */,
+				0F901FE51F3163D900853210 /* UIButton+Extension.swift */,
 				0F712F3E1F30AA2400DF8F30 /* Main.storyboard */,
 				0F712F411F30AA2400DF8F30 /* Assets.xcassets */,
 				0F712F431F30AA2400DF8F30 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F712F4D1F30AA5C00DF8F30 /* UIView+Extension.swift in Sources */,
+				0F901FE61F3163D900853210 /* UIButton+Extension.swift in Sources */,
 				0F712F3D1F30AA2400DF8F30 /* ViewController.swift in Sources */,
 				0F712F3B1F30AA2400DF8F30 /* AppDelegate.swift in Sources */,
 			);
@@ -305,6 +309,7 @@
 				0F712F4B1F30AA2400DF8F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

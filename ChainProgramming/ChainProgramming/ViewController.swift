@@ -9,21 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        UIButton.make.owner(view).addAction { (sender) in
+            print("点了")
+        }.bgColor(.red).title("点我").layout([10, 10, 50, 50])
         
-        UIView.make.owner(view).bgColor(nil).layout([10, 30, 50, 50])
-       
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
