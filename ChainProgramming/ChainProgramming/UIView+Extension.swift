@@ -10,18 +10,18 @@ import UIKit
 
 extension UIView {
  
-    class var make: UIView {
+    @objc class var make: UIView {
         let view = UIView()
         return view
     }
     
-    @discardableResult
+    @discardableResult @objc
     func owner(_ superView: UIView) -> UIView {
         superView.addSubview(self)
         return self
     }
     
-    @discardableResult
+    @discardableResult @objc
     func bgColor(_ bgColor: UIColor?) -> UIView {
         backgroundColor = bgColor
         return self

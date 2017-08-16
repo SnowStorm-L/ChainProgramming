@@ -11,20 +11,20 @@ import UIKit
 extension UIButton {
   
     struct Constant {
-        static var buttonActionKey = UnsafePointer<Any>.init(bitPattern: "buttonAction".hashValue)
+        static var buttonActionKey = "buttonAction"
     }
     
     override class var make: UIButton {
         let view = UIButton(type: .system)
         return view
     }
-    
+
     @discardableResult
     override func owner(_ superView: UIView) -> UIButton {
         superView.addSubview(self)
         return self
     }
-    
+
     @discardableResult
     override func bgColor(_ bgColor: UIColor?) -> UIButton {
         backgroundColor = bgColor
@@ -76,10 +76,10 @@ extension UIButton {
     
     fileprivate var buttonActionClosure: ((_ sender: UIButton?)->Void)? {
         set {
-            objc_setAssociatedObject(self, Constant.buttonActionKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &Constant.buttonActionKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
         get {
-            return (objc_getAssociatedObject(self, Constant.buttonActionKey)) as? ((_ sender: UIButton?)->Void)
+            return (objc_getAssociatedObject(self, &Constant.buttonActionKey)) as? ((_ sender: UIButton?)->Void)
         }
     }
     

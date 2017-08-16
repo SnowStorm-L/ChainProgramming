@@ -18,7 +18,6 @@ class ViewController: UIViewController {
             print("点了")
         }.bgColor(.red).title("点我").layout([10, 10, 50, 50])
         
-        
     }
     
     override func didReceiveMemoryWarning() {
