@@ -14,9 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UIButton.make.owner(view).addAction { (sender) in
+       let button = UIButton.make.owner(view).addAction { (sender) in
             print("点了")
-        }.bgColor(.red).title("点我").layout([10, 10, 50, 50])
+        }.bgColor(.red).title("点我")
+        button.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
+        
         
     }
     

@@ -27,11 +27,4 @@ extension UIView {
         return self
     }
     
-    @discardableResult
-    func layout(_ location: [CGFloat]) -> UIView {
-        assert(location.count == 4, "X,Y,W,H")
-        frame = CGRect(x: location[0], y: location[1], width: location[2], height: location[3])
-        return self
-    }
-    
 }
